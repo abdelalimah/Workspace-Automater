@@ -4,7 +4,7 @@
 
 # Usage
 
-## Setup : copy&past the following command in your terminal
+## Setup : copy and past the following command in your terminal
 
 git clone https://github.com/abdelalimah/worksapceAutomater.git && bash worksapceAutomater/automater.sh && cd && rm -rf worksapceAutomater
 
@@ -12,6 +12,9 @@ git clone https://github.com/abdelalimah/worksapceAutomater.git && bash worksapc
 automater create 'work_space_name' 'app1_name' 'app2_name' ...
 
 ## Launching a workspace
-automater 'work_space_name'
+automater start 'work_space_name'
 
+## Deleting a workspace
+automater delete 'work_space_name'
+##
 Enjoy 🦊
