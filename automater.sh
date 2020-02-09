@@ -27,8 +27,7 @@ create(){
             app+=${apps[i]}" "
     done
     
-    ######## TO FIX ########
-    if [  "grep -Fxq "$2" ~/.automater_workspaces" ]; then
+    if grep -q $2 ~/.automater_workspaces; then
         echo "++$2 workspace already exists 🤥"
     else
         `echo -e $2=${app} >> ~/.automater_workspaces`
