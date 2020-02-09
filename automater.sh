@@ -23,8 +23,6 @@ main(){
 create(){
     main
     apps=("$@")
-    let lastItem=$#-1
-
     for i in `seq 2 $#`; do
             app+=${apps[i]}" "
     done
