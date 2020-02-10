@@ -6,7 +6,7 @@ main(){
         echo "+Cooking your setup 🍫"
         else
         `touch ~/.automater_workspaces`
-        `chmod +wr ~/.automater_workspaces`
+        `chmod -R 775 ~/.automater_workspaces`
     fi
 }
 # TO-DO : init function
