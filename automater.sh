@@ -1,6 +1,6 @@
 #!bin/bash
 
-# TO-DO : main function
+#main function
 main(){
     if [ -e ~/.automater_workspaces ]; then
         echo "+Cooking your setup 🍫"
@@ -9,7 +9,7 @@ main(){
         `chmod -R 775 ~/.automater_workspaces`
     fi
 }
-# TO-DO : init function
+#init function
 init(){
     if [ "$#" -gt "1" ]; then
         check
@@ -36,7 +36,7 @@ init(){
     echo "All set & ready to go , restart your terminal & enjoy your work 🦄 "
 }
 
-# TO-DO : create function
+#create function
 create(){
     if [ "$#" -le "2" ]; then
         check
@@ -55,7 +55,7 @@ create(){
         echo "++Your workspace is ready 🦊"
     fi
 }
-# TO-DO : resolving app name and verification
+#resolving app name and verification
 resolve(){
     app=`cd /Applications/ && find . -iname *$1* -type d -maxdepth 1 && cd`
     if [[ $app ]]; then
@@ -64,7 +64,7 @@ resolve(){
             return 0
     fi
 }
-# TO-DO : openning apps
+#openning apps
 launch(){
     ## getting the line of workspace ##
     workSpaceLineNumber=`awk "/$2/{ print NR; exit }" ~/.automater_workspaces`
@@ -91,7 +91,7 @@ launch(){
     done
     echo "Done 🥋 "
 }
-# TO-DO : start function
+#start function
 start(){
         if [ "$#" -gt "2" ]; then
             check
@@ -112,6 +112,7 @@ check(){
     fi
     echo "++Please use valid commands , refer to the documentation to learn more ⛑ "
 }
+
 #script index
 case $1 in
         "create")
