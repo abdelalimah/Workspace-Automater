@@ -1,5 +1,4 @@
-## workspace automater is a command line tool for creating workspaces assembling multiple apps to run with a single command
-
+## workspace automater is a command line tool for creating workspaces assembling multiple apps to run with a single command (for macOs)
 # Usage
 
 ## Setup : copy and past the following command in your terminal
